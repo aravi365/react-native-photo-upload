@@ -40,6 +40,8 @@ export default class PhotoUpload extends React.Component {
 
   options = {
     title: this.props.photoPickerTitle || 'Select Photo',
+    takePhotoButtonTitle: "Take Photo",
+    chooseFromLibraryButtonTitle: "Choose Photo",
     storageOptions: {
       skipBackup: true,
       path: 'images'
@@ -84,7 +86,7 @@ export default class PhotoUpload extends React.Component {
         //For a few images rotation is 180. 
         rotation = -180 
       } else if ( originalRotation === 270 )  {
-        //When taking images with the front camera (selfie), the rotation is 270.
+        //When eing images with the front camera (selfie), the rotation is 270.
         rotation = -90 
       }
       // resize image
